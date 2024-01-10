@@ -1,0 +1,123 @@
+
+/* TIPOGRAFIAS
+    font-size: 2em;           Tamaño 
+    font-family: Robot;       Tipografia 
+    line-height: 1;           Ancho que ocupa el ESCPACIO del TEXTO 
+    font-weight: 700;         Grosor de las letras 
+    
+    Tipografias =  Google  Fonts 
+*/
+
+/* TIPOS ELEMENTOS:
+
+    Elementos en linea  --> Ocupa lo que ocupa el contenido
+    Elementos en bloque --> Ocupa el ancho del contenedor
+
+*/
+
+/* MAREGENES:
+    display: inline; Hace que los elementos en bloque se conporten en elemenetos en linea
+    padding: podemos modificar el tamaño entre el contenido y la caja 
+    outline: tiene un funcionamiento parecido al border pero este simplemente es visual no tiene una apliacion de pixeles al contrario que border
+    marging: es el espacio entre los exteriores de la caja
+     
+*/
+
+/* BORDES:
+    border: podemos crear un borde a la caja 
+
+
+*/
+
+/* SOMBRAS:
+    box-sahdow: podemos crear sombras los contenedores
+    text-sahdow: podemos crear sombras al texto
+*/
+
+/* POSITION:
+    static:
+    relative: le da una posición ademas de añadirle los atributos:
+        top:
+        left:
+        right:
+        botoom:
+
+    absolute: Con este los espacios reservados invisibles parar cada caja desaparecen
+    fixed: Es igual que absolut pero queda fijaado como la publidad cuando baja el contenido 
+    pero esta no 
+    sticky:
+*/
+
+/*  Z-INDEX:
+
+    z-index: Hace tener un posicionamiento elevado a un objeto que haya por encima de este
+    hay un caso que cuando haya una clase padre y una  hijo la unica forma de que el hijo se 
+    oculte debajo de padre es dadndo solamenente el z-index: -1; al hijo
+
+*/
+
+
+/* DISPLAY
+    BLOCK: Ocupa todo el espacio = 100% width
+    INLINE: Ocupa lo que ocupe el tecto de dentro puede ponerse uno detras de otro
+    ILINE-BLOCK: hace las dos funiones 
+    FLEX: permite poner un conetenedor alado del otro obteniedo adaptabilidad
+
+*/
+
+/*  OVERFLOW
+    overlow hace eque el contenido de una caja enmede de salirse quede dentro de esta sroleando  
+
+*/
+
+/*  FLOAT
+    float: su unico uso es para el ajuste de iamgenes dentro de contenedores haceindo que el texto rode la img
+    
+*/
+
+/* PSEUDO- ELEMENTOS
+    ::first-line    cambia toda la priera linea de un texto sin inportar si cambia de resolución
+    ::first-letter  cambia la primera linea del texto 
+    ::placeholder   se aplica con html
+    ::after         puedes escribir despues de un escrito
+    ::before        puedes escribir antes de un escrito
+    ::selection     Puedes cambiar el  color y froma del a la seleccion abitual
+
+*/
+
+/*  PSEUDO-CLASES
+    :hover
+    :link     todos los link no viditados puedes poner que sean de un color
+    :visited  y todos los ya visitados de otro
+    :active   a la hora de clicar este podemos hacer que aumente o que haga lo que nosotros queramos
+    :focus    solo suelefuncionar en el input paraa escribir
+    :lang     funciona para leer los textos y para detectar el idioma de este  
+
+*/
+
+/*  Object-Fit: Fil  (Imagenes)
+    cover: se ajusta al contenedor agrandado la imagen para adaptarse al contenido
+    contain: 
+    none: pone las resoluciones originales
+    sacale-down
+*/
+
+/*  OBJECT-POSITION
+    object-position: posicionamineto de las imagenes dento del contenedor
+        top, left, right, botoom, y con pixeles 1em 10px    
+
+*/
+
+/*   CURSOR
+     con cursor podemos cambair el tipo de este al seleccionar un contenedor o lo que deseemos
+
+
+*/
+
+/*  FLEX
+    
+
+*/
+
+
+
