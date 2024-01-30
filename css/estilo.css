@@ -145,5 +145,6 @@ body {
   width: 100px;
   height: 200px;
   object-fit: contain;
-  display: block;
+  float: left;
+  margin-right: 20px;
 }
