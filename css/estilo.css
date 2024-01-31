@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 * {
   box-sizing: border-box;
+
 }
 
 
 
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #fff;
 }
 
 .container {
@@ -87,6 +91,30 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
   z-index: -1;
 }
+
+.hero4{
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+
+.hero4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/tras4.jpg');
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+  z-index: -1;
+}
 /* Nav */
 
 .nav {
@@ -116,7 +144,7 @@ body {
 .nav__links {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2em;
+
 
 }
 
@@ -125,9 +153,41 @@ body {
   width: 30px;
 }
 
+.aparecer {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
 
+.aparecer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
+.salto {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
 
+.salto:hover {
+  transform: translateY(-5px);
+}
+
+@media only screen and (max-width: 700px){
+  .nav__items{
+    
+      display: block;
+  }
+  
+ 
+}
 
 /* Hero container */
 
@@ -144,6 +204,7 @@ body {
 
 .hero__title {
   font-size: 5rem;
+  font-family: 'Lora', sans-serif;
 }
 
 .cta {
@@ -156,6 +217,7 @@ body {
   border-radius: 32px;
   
 }
+
 /*Foto de Historia*/
 .hero2__container {
   max-width: 800px;
@@ -170,6 +232,7 @@ body {
 
 .hero2__title {
   font-size: 5rem;
+  font-family: 'Lora', sans-serif;
 }
 
 /*Foto de Actividades*/
@@ -186,7 +249,26 @@ body {
 
 .hero3__title {
   font-size: 5rem;
+  font-family: 'Lora', sans-serif;
 }
+
+/*Foto de Historia*/
+.hero4__container {
+  max-width: 800px;
+  --padding-container: 20px;
+  display: grid;
+  grid-auto-rows: max-content;
+  align-content: center;
+  gap: 1em;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.hero4__title {
+  font-size: 5rem;
+  font-family: 'Lora', sans-serif;
+}
+
 
 
 
@@ -194,13 +276,9 @@ body {
 
 /*Historia*/
 
-.knowledge {
-  background-color: red;
-  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-  padding-top:30px ;
-  padding-bottom: 100px;
-  
 
+.knowledge{
+  
 }
 
 .knowledge__container{
@@ -209,6 +287,7 @@ body {
   -moz-box-shadow: 10px 15px 50px 13px rgba(0,0,0,0.28);
   box-shadow: 10px 15px 50px 13px rgba(0,0,0,0.28);
   background-color:rgb(215, 219, 221);
+  margin-top: 30px;
 }
 
 .knowledge__paragraph{
@@ -230,22 +309,87 @@ body {
 
 
 /*Galeria*/
+
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
   padding: 20px;
 }
 
-.image {
+.image-container {
+  position: relative;
   overflow: hidden;
   border-radius: 8px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+
+/*Actividades*/
+
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  
+}
+
+.actividad {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color:rgb(215, 219, 221);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-img {
-  width: 100%;
+.actividad__container {
+  padding: 20px;
+}
 
-  border-radius: 8px;
-  display: block;
+.actividad__img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.actividad__paragraph {
+  margin-top: 10px;
+  color: #555;
 }
