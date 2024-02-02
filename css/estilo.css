@@ -144,8 +144,6 @@ body {
 .nav__links {
   color: #fff;
   text-decoration: none;
-
-
 }
 
 .nav__img {
@@ -191,14 +189,56 @@ body {
 
 @keyframes aparecer {
   from {
-    transform: translateX(-100%); /* Iniciar fuera del área visible a la izquierda */
+    transform: translateX(-100%); 
     opacity: 0;
   }
   to {
-    transform: translateX(0); /* Terminar en su posición original */
+    transform: translateX(0); 
     opacity: 1;
   }
 }
+
+.icono{
+  float: right;
+  font-size: 22px;
+}
+
+@media (max-width: 850px){
+ 
+  .nav__links{
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 850px){
+  .icono{
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Hero container */
@@ -284,7 +324,8 @@ body {
 /*Index*/
 
 .mapa{
-
+background-color: #a6d0e5;
+padding: 20px;
 }
 
 .mapa__container{
@@ -294,8 +335,6 @@ body {
   -moz-box-shadow: 10px 15px 50px 13px rgba(0,0,0,0.28);
   box-shadow: 10px 15px 50px 13px rgba(0,0,0,0.28);
   background-color:rgb(238, 238, 238);
-  margin-top: 30px;
-  
   padding-bottom: 20px;
 }
 
@@ -420,3 +459,6 @@ body {
   margin-top: 10px;
   color: #555;
 }
+
+
+
