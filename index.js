@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
 type="text/javascript">
 window.addEventListener("scroll", function(){
   var header = document.querySelector("header");
@@ -18,4 +19,9 @@ function toggleRespuesta(id) {
   } else {
       respuesta.style.display = 'none';
   }
+}
+
+function toggleSize(element) {
+  element.classList.toggle("ampliada");
+
 }
