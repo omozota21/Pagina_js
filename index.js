@@ -25,3 +25,17 @@ function toggleSize(element) {
   element.classList.toggle("ampliada");
 
 }
+
+
+/*Cmabio de tema */
+function toggleTheme() {
+  document.body.classList.toggle('dark-theme');
+}
+
+/* Contador de clicks */
+let clicks = 0;
+
+function incrementCounter() {
+    clicks++;
+    document.getElementById('counter').textContent = clicks;
+}
