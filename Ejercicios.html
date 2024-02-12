@@ -82,6 +82,21 @@
             </div>
         </section>
 
+        <section class="knowledge">
+            <div class="knowledge__container container">   
+                    <img src="./img/clicks.png" class="knowledge__img" onclick="incrementCounter()">
+                    <h2 class="subtitle">Galeria de Imagenes</h2> 
+                    <p class="knowledge__paragraph">Este ejercicio crea una galería de miniaturas de imágenes con la capacidad de mostrar una imagen a tamaño completo al hacer clic en una miniatura.
+                        Cada miniatura tiene un atributo onclick que llama a la función showImage() con la URL de la imagen a tamaño completo como argumento.
+                        La función showImage() toma la URL de la imagen a tamaño completo como parámetro y actualiza la src de un elemento <img> con el id fullImage con esa URL, lo que muestra la imagen a tamaño completo.
+                        La imagen a tamaño completo está oculta por defecto (display: none;), y al hacer clic en una miniatura se cambia su estilo para que se muestre (display: block;). Esto se logra cambiando la propiedad style.display del elemento en JavaScript.</p>  
+                    <img src="./img/html.jpg" class="thumbnail" onclick="showImage('html.jpg')" alt="Thumbnail 1">
+                    <img src="./img/csss.png" class="thumbnail" onclick="showImage('fullImage2.jpg')" alt="Thumbnail 2">
+                    <img src="./img/js.png" class="thumbnail" onclick="showImage('fullImage2.jpg')" alt="Thumbnail 2">
+                    
+            </div>
+        </section>
+
         
 
     </main>

@@ -52,7 +52,7 @@
         
         <section class="knowledge">
             <div class="knowledge__container container">   
-                    <img src="./img/logo_js.png" class="knowledge__img">
+                    <img src="./img/logo_js.png" class="knowledge__img" onclick="toggleTheme()">
                     <h2 class="subtitle">Que es js?</h2>
                     <p class="knowledge__paragraph">JavaScript es uno de los lenguajes de programación más usados y populares del mundo. Nació en 1995 para darle interactividad a las páginas web y desde entonces ha evolucionado hasta convertirse en un lenguaje de programación de propósito general. Dicho de otra forma: se puede usar casi para cualquier cosa.</p>    
             </div>
@@ -80,41 +80,74 @@
                     <p class="knowledge__paragraph">En JavaScript, como cualquier otro lenguaje de programación, vamos a querer trasladar la información del mundo real a nuestro código. Para ello, necesitamos entender qué tipos de datos existen en el lenguaje para poder representar la información que necesitamos
                         En JavaScript tenemos 9 tipos de datos que se dividen en dos grandes grupos: primitivos o no primitivos. Más adelante te contaré qué significa esto, pero por ahora, vamos a ver los tipos primitivos.
                         Dentro de los tipos primitivos tenemos 7 tipos de datos:</p>   
-                    
-                    <p>Números
-                                Los números (tipo number) son los datos más básicos que podemos representar en JavaScript. En JavaScript, no hay una diferencia entre números enteros y números decimales, todos los números son de tipo number:
-                                7
-                                3.14
-                                19.95
-                                2.998e8
-                                -1
-                                <h3>Operadores aritméticos</h3>
-                                Con los números, puedes usar los operadores aritméticos para realizar operaciones matemáticas. En JavaScript tenemos los siguientes operadores aritméticos:
-                            
-                                +: suma
-                                -: resta
-                                *: multiplicación
-                                /: división
-                                %: módulo (resto de la división)
-                                **: exponente
-                    </p>
-                    <ul>string</ul> 
-                       
-                        La cadena de texto (tipo string) es otro tipo de dato muy común. En JavaScript, las cadenas de texto se representan entre comillas simples, dobles o acentos graves:
-                        'Estás aprendiendo JavaScript'  
-                        "JavaScript te va a gustar"
-                        `Esto es una cadena de texto`
-                        Las comillas simples y dobles funcionan igual, pero al usar acentos graves podemos escribir cadenas de texto que ocupen varias líneas:
+                <div class="container Titulos">     
+                    <h2>Números</h2>
+                        <p>Números: Los números (tipo number) son los datos más básicos que podemos representar en JavaScript. En JavaScript, no hay una diferencia entre números enteros y números decimales, todos los números son de tipo number:</p>
+                            <ul>
+                                <li>7</li>
+                                <li>3.14</li>
+                                <li>19.95</li>
+                                <li>2.998e8</li>
+                                <li>-1</li>
+                            </ul>
 
-                        `Esto es una cadena de texto
-                        que ocupa varias líneas. Puedes escribir
-                        tantas líneas como quieras`
-                        En clases posteriores, veremos cómo funcionan, algunos métodos interesantes y sus diferencias.
-                    <ul>boolean</ul> 
-                    <ul>null</ul> 
-                    <ul>undefined</ul> 
-                    <ul>symbol</ul> 
-                    <ul>bigint</ul> 
+                    <h3>Operadores aritméticos</h3>
+                        <p>Con los números, puedes usar los operadores aritméticos para realizar operaciones matemáticas. En JavaScript tenemos los siguientes operadores aritméticos:</p>
+                            <ul>
+                                <li>+: suma</li>
+                                <li>-: resta</li>
+                                <li>*: multiplicación</li>
+                                <li>/: división</li>
+                                <li>%: módulo (resto de la división)</li>
+                                <li>**: exponente</li>
+                            </ul>
+
+                    <h2>Cadenas de texto</h2>
+                        <p>La cadena de texto (tipo string) es otro tipo de dato muy común. En JavaScript, las cadenas de texto se representan entre comillas simples, dobles o acentos graves:</p>
+                            <ul>
+                                <li>'Estás aprendiendo JavaScript'</li>
+                                <li>"JavaScript te va a gustar"</li>
+                                <li>`Esto es una cadena de texto`</li>
+                            </ul>
+
+                        <p>Las comillas simples y dobles funcionan igual, pero al usar acentos graves podemos escribir cadenas de texto que ocupen varias líneas:</p>
+
+                            <pre>
+                            `Esto es una cadena de texto
+                            que ocupa varias líneas. Puedes escribir
+                            tantas líneas como quieras`
+                            </pre>
+                    
+                    <h2>Booleanos en JavaScript</h2>
+                        <p>Los booleanos representan sólo dos valores: <strong>true</strong> (verdadero) o <strong>false</strong> (falso). Por ejemplo:</p>    
+                            <ul>
+                                <li>¿La luz está encendida (<strong>true</strong>) o apagada (<strong>false</strong>)?</li>
+                                <li>¿Está lloviendo (<strong>true</strong>) o no está lloviendo (<strong>false</strong>)?</li>
+                                <li>¿Está el usuario logueado (<strong>true</strong>) o no está logueado (<strong>false</strong>)?</li>
+                            </ul> 
+                        <p>Estos son ejemplos de preguntas que podemos responder con un valor booleano.</p> 
+                            <pre><code>true false</code></pre>       
+
+                   <h2>La diferencia entre null y undefined</h2>
+                        <p>Mientras que <strong>null</strong> es un valor que significa que algo no tiene valor, <strong>undefined</strong> significa que algo no ha sido definido. Por ejemplo, si creamos una variable sin asignarle ningún valor, su valor será <strong>undefined</strong>:</p>
+                            <pre><code>let rolloDePapel // -&gt; undefined</code></pre>
+
+                        <p>También podemos asignar directamente el valor <strong>undefined</strong> a una variable:</p>
+                            <pre><code>let rolloDePapel = undefined // -&gt; undefined</code></pre>
+                        <p>En cambio, para que una variable tenga el valor <strong>null</strong>, sólo podemos conseguirlo asignándole explícitamente ese valor:</p>
+                            <pre><code>let rolloDePapel = null</code></pre>
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                    <ul>
+                        <li>symbol</li>
+                        <li>bigint</li>
+                    </ul>
+                </div>
             </div>
         </section>
 

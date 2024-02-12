@@ -39,3 +39,25 @@ function incrementCounter() {
     clicks++;
     document.getElementById('counter').textContent = clicks;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
