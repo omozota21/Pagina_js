@@ -29,7 +29,7 @@ body {
 }
 
 .aumentar:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
 }
 
 
@@ -45,7 +45,7 @@ body {
   grid-template-rows: 100px 1fr;
   color: #fff;
 }
-DAS
+
 .hero::before {
   content: "";
   position: absolute;
@@ -167,6 +167,27 @@ DAS
   width: 30px;
 }
 
+.nav_indice{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_indice__a{
+  background-color: #555;
+  border-radius: 20px;
+  color: #fff;
+  margin: 20px;
+  padding: 15px;
+  text-decoration:none ;
+}
+
+.nav_indice__a:hover{
+  color:gray
+}
+
+
 .aparecer {
   opacity: 0;
   transform: translateY(20px);
@@ -227,35 +248,12 @@ DAS
   }
 }
 
-
-
-
-
-
-
-
-
-
 @media (min-width: 850px) {
   .icono {
     display: none;
   }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Hero container */
@@ -431,7 +429,9 @@ DAS
 }
 
 .knowledge__img__float{
-  float: left;
+  margin: 0 auto;
+  padding: 20px;
+  
 
 }
 

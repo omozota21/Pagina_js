@@ -25,17 +25,12 @@
 
             <ul class="nav__link nav__link--menu">
                 <li class="nav__items">
-                    <a href="./index.html" class="nav__links salto">Que es js?</a>
+                    <a href="./index.html " class="nav__links salto">Que es js?</a>
                 </li>
                 <li class="nav__items">
                     <a href="./Ejercicios.html" class="nav__links salto">Ejercicios</a>
                 </li>
-                <li class="nav__items">
-                    <a href="./Actividades.html" class="nav__links salto">Actividades</a>
-                </li>
-                <li class="nav__items">
-                    <a href="#" class="nav__links salto">Blog</a>
-                </li>
+               
                 
                 
             </ul>
@@ -49,16 +44,31 @@
     </header>
 
     <main class="main">
+        <nav>
+            <ul class="nav_indice">
+                <a href="#1" class="nav_indice__a salto">Que es js?</a>
+                <a href="#2" class="nav_indice__a salto">Usos</a>
+                <a href="#3" class="nav_indice__a salto">Tipos de Datos</a>
+                
+                <!--<li><a href="#4"></a></li>
+                <li><a href="#5"></a></li>
+                <li><a href="#6"></a></li>
+                <li><a href="#7"></a></li>   
+                <li><a href="#8"></a></li> 
+                <li><a href="#9"></a></li> 
+                -->
+            </ul>
+        </nav>
         
-        <section class="knowledge aumentar ">
+        <section class="knowledge aumentar " id="1">
             <div class="knowledge__container container ">   
                     <img src="./img/logo_js.png" class="knowledge__img" onclick="toggleTheme()">
-                    <h2 class="subtitle">Que es js?</h2>
+                    <h2 class="subtitle" >Que es js?</h2>
                     <p class="knowledge__paragraph">JavaScript es uno de los lenguajes de programación más usados y populares del mundo. Nació en 1995 para darle interactividad a las páginas web y desde entonces ha evolucionado hasta convertirse en un lenguaje de programación de propósito general. Dicho de otra forma: se puede usar casi para cualquier cosa.</p>    
             </div>
         </section>
 
-        <section class="knowledge aumentar">
+        <section class="knowledge aumentar" id="2">
             <div class="knowledge__container container">   
                     <img src="./img/codigo_js.png" class="knowledge__img">
                     <h2 class="subtitle">Usos</h2>
@@ -73,7 +83,7 @@
         </section>
 
 
-        <section class="knowledge aumentar">
+        <section class="knowledge aumentar"id="3">
             <div class="knowledge__container container ">   
                     <img src="./img/Tipod de datos.png" class="knowledge__img">
                     <h2 class="subtitle">Tipos de Datos</h2>
@@ -83,7 +93,6 @@
                 <div class="container Titulos">     
                     <h2>Números</h2>
                         <p>Números: Los números (tipo number) son los datos más básicos que podemos representar en JavaScript. En JavaScript, no hay una diferencia entre números enteros y números decimales, todos los números son de tipo number:</p>
-                            <ul>
                                 <li>7</li>
                                 <li>3.14</li>
                                 <li>19.95</li>
