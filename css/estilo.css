@@ -45,7 +45,7 @@ body {
   grid-template-rows: 100px 1fr;
   color: #fff;
 }
-
+DAS
 .hero::before {
   content: "";
   position: absolute;
