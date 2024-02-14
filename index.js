@@ -27,6 +27,9 @@ function toggleSize(element) {
 }
 
 
+
+
+
 /*Cmabio de tema */
 function toggleTheme() {
   document.body.classList.toggle('dark-theme');
