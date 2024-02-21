@@ -60,7 +60,3 @@ function incrementCounter() {
 
 
 
-
-
-
-

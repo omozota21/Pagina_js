@@ -141,6 +141,17 @@ body {
   color:gray
 }
 
+.fixxed__header{
+  position: sticky;
+  top: 20px;
+  z-index: 1000;
+
+}
+
+
+
+
+
 
 .aparecer {
   opacity: 0;
@@ -297,6 +308,16 @@ body {
 }
 
 
+/* Tecno */
+.tecno__img{
+  width: auto;
+  height: 100px;
+  object-fit: contain;
+
+}
+
+
+
 /* Ejercicio 1*/
 .dark-theme {
   background-color: #fff; /* Fondo oscuro */
@@ -313,4 +334,12 @@ body {
   display: none;
   max-width: 100%;
   height: auto;
+}
+
+/* Footer */
+.footer{
+  background-color: #000;
+  width: auto;
+  
+
 }

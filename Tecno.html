@@ -1,0 +1,85 @@
+<!DOCTYPE html5>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+    </style>
+    <script src="./index.js"></script>
+    <title>  Pg_web_js</title>
+    <link rel="shortcut icon" href="./img/logo_js.png">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b4cf682731.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body >
+
+    <header class="hero2">
+       
+
+        <nav class="nav container ">
+            <div class="nav__logo">
+                <h2 class="nav__title">Aprendiendo js</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="./index.html" class="nav__links salto active">Que es js?</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./Ejercicios.html" class="nav__links salto active ">Ejercicios</a>
+                </li>
+                <li class="nav__items">
+                    <a href="./Tecno.html" class="nav__links salto">Tecnologias vistas</a>
+                </li>
+              
+            </ul>
+
+        </nav>
+    
+        <section class="hero2__container container">
+        
+            <h1 class="hero2__title aparecer">JS.</h1>
+          
+            <a href="" class="cta salto aparecer">Observa Fotos</a>
+        </section>
+    </header>
+
+    <main>
+        
+        <section class="knowledge aumentar">
+            <div class="knowledge__container container">   
+                    <img src="./img/boton.png" class="knowledge__img" onclick="toggleTheme()">
+                    <h2 class="subtitle">Tecnologias Vistas</h2>
+                    
+                    <p class="knowledge__paragraph">En este ejercicio, se utiliza JavaScript para agregar funcionalidad interactiva a un botón que cambia el tema de la página.
+                        Se define una función llamada toggleTheme() que se activa cuando se hace clic en el botón.Dentro de la función toggleTheme(),
+                         se utiliza document.body.classList.toggle('dark-theme')  para alternar 
+                         la clase dark-theme en el elemento body del documento HTML.
+                        En el CSS, se definen reglas de estilo para el tema claro por defecto y para el tema oscuro, utilizando la clase dark-theme. 
+                       </p><img src="./img/EJ_1.1.png" class="knowledge__img__float">     <img src="./img/Ej_1.2.png" class="knowledge__img__float">
+            </div>
+        </section>
+        <div class="carrusel">
+            <div class="carousel-inner">
+                <img class="Tecno__img"  src="./img/dockerr.png">
+                <img class="Tecno__img"  src="./img/flutter.jpg">
+                <img class="Tecno__img"  src="./img/reflex.png">
+                <img class="Tecno__img"  src="./img/React.png">
+                <img class="Tecno__img"  src="./img/js.png">
+                <img class="Tecno__img"  src="./img/C.png">
+                <img class="Tecno__img"  src="./img/">
+                <img class="Tecno__img"  src="./img/">
+                <img class="Tecno__img"  src="./img/">
+                <img class="Tecno__img"  src="./img/">
+            </div>
+        </div>
+    </main>
+
+
+</body >
+</html>
