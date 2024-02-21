@@ -12,6 +12,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #333;
+  
 }
 
 .container {
@@ -92,6 +93,8 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
+  top:0;
+  position: sticky;
 }
 
 .nav__title {
@@ -129,10 +132,10 @@ body {
 }
 
 .nav_indice__a{
-  background-color: #555;
+  background-color: #333;
   border-radius: 20px;
   color: #fff;
-  margin: 20px;
+  margin: 5px;
   padding: 15px;
   text-decoration:none ;
 }
@@ -143,9 +146,14 @@ body {
 
 .fixxed__header{
   position: sticky;
-  top: 20px;
+  top: 0;
   z-index: 1000;
+  background-color: #333;
 
+}
+
+.id{
+  top: 20px;
 }
 
 
@@ -269,7 +277,7 @@ body {
 
 
 
-/* Ejercicios*/
+/* Textos */
 
 
 .knowledge__container {
@@ -281,20 +289,39 @@ body {
   margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
+  padding: 20px;
+  border-radius: 1px;
+ 
 }
+
 
 .knowledge__paragraph {
   line-height: 1.7;
   margin-bottom: 5px;
   margin: 40px;
   text-align: justify;
+  
 }
 
+.knowledge__paragraph__p {
+  line-height: 1.7;
+  margin-bottom: 5px;
+  margin: 40px;
+  text-align: justify;
+  color: #fff;
+  background-color:#555;
+  padding: 20px;
+}
+
+
+
+
 .knowledge__img {
-  width: 130px;
+  width: 110px;
   height: auto;
   object-fit: contain;
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
   align-items: center;
   border: solid 5px #555;
   cursor: pointer;
@@ -343,3 +370,6 @@ body {
   
 
 }
+
+
+

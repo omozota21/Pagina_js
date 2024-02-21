@@ -30,7 +30,7 @@ function toggleSize(element) {
 
 
 
-/*Cmabio de tema */
+/*Cambio de tema */
 function toggleTheme() {
   document.body.classList.toggle('dark-theme');
 }
