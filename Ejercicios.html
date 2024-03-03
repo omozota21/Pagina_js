@@ -7,7 +7,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
     </style>
-    <script src="./index.js"></script>
+    <script defer src="./js/index.js"></script>
     <title>  Pg_web_js</title>
     <link rel="shortcut icon" href="./img/logo_js.png">
    
@@ -93,6 +93,38 @@
                     <img src="./img/js.png" class="thumbnail" onclick="showImage('fullImage2.jpg')" alt="Thumbnail 2">
                     
             </div>
+        </section>
+
+        <section class="knowledge aumentar">
+            <div class="knowledge__container container">
+                <h2 class="subtitle">Lista de tareas</h2> 
+                <div class="list roundBorder">
+                    <div class="date">
+                        <div class="dateRight">
+                            <div id="dateNumber"></div>
+                            <div>
+                                <div id="dateMonth"></div>
+                                <div id="dateYear"></div>
+                            </div>
+                        </div>
+                        <div id="dateText"></div>
+                    </div>
+                    <form onsubmit="addNewTask(event)" >
+                        <input type="text" name="taskText" autocomplete="off" placeholder="Nueva tarea" class="roundBorder">
+                        <button type="submit" class="addTaskButton">+</button>
+                        <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
+                    </form>
+                    <div id="tasksContainer"></div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            
+        
+
+
         </section>
 
         
