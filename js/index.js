@@ -6,27 +6,29 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-type="text/javascript">
-window.addEventListener("scroll", function(){
-  var header = document.querySelector("header");
-  header.classList.toggle("abajo",window.scrollY>0);
-})
+/* Tipos de Variables */ 
+var ciudad = "Utebo";
+let edad = 18;
+const nombre = "Oscar";
 
-function toggleRespuesta(id) {
-  var respuesta = document.getElementById('respuesta' + id);
-  if (respuesta.style.display === 'none') {
-      respuesta.style.display = 'block';
-  } else {
-      respuesta.style.display = 'none';
-  }
+/* Funciones */
+function suma(a, b) {
+    return a + b;
 }
 
-function toggleSize(element) {
-  element.classList.toggle("ampliada");
+var num1 = 5;
+var num2 = 3;
+console.log("La suma de", num1, "y", num2, "es:", suma(num1, num2));
 
-}
+/* Arrays */
+var numeros = [1, 2, 3, 4, 5];
 
+var colores = ["rojo", "verde", "azul"];
 
+var mixto = [1, "dos", true, 4.5];
+
+console.log("El primer número es:", numeros[0]);
+console.log("El segundo color es:", colores[1]);
 
 
 
@@ -45,10 +47,6 @@ function incrementCounter() {
 
 
 
-/* Tipos de Variables */ 
-var ciudad = "Utebo";
-let edad = 18;
-const nombre = "Oscar";
 
 
 
@@ -83,6 +81,11 @@ const renderOrderedTasks = () => {
 }
 
 setDate();
+
+
+
+
+
 
 
 

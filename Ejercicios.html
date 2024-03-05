@@ -81,6 +81,20 @@
         </section>
 
         <section class="knowledge aumentar">
+            <div class="knowledge__container container">   
+                    <img src="./img/Desplazamiet2.png" class="knowledge__img" >
+                    <h2 class="subtitle">Desplazamiento de el H1</h2> 
+                    <p class="knowledge__paragraph">Este ejercicio muestra cómo utilizar JavaScript para realizar un seguimiento del número 
+                        de clics en un botón y actualizar dinámicamente el contenido de la página con ese valor.
+                        Se inicializa una variable llamada clicks en 0 fuera de cualquier función para que sea accesible globalmente.
+                        Cuando se hace clic en el botón, se activa la   función incrementCounter(), que incrementa el valor de clicks en uno.
+                        Luego, la función actualiza el contenido de un elemento HTML con el id counter utilizando document.getElementById('counter').textContent = clicks;,
+                         mostrando así el número actual de clics en la página.</p>  <img src="./img/Desplazamiento.png" class="knowledge__img__float"> 
+                    
+            </div>
+        </section>
+
+        <section class="knowledge aumentar">
             <div class="knowledge__container container aumentar">   
                     <img src="./img/clicks.png" class="knowledge__img" onclick="incrementCounter()">
                     <h2 class="subtitle">Galeria de Imagenes</h2> 
@@ -88,12 +102,18 @@
                         Cada miniatura tiene un atributo onclick que llama a la función showImage() con la URL de la imagen a tamaño completo como argumento.
                         La función showImage() toma la URL de la imagen a tamaño completo como parámetro y actualiza la src de un elemento <img> con el id fullImage con esa URL, lo que muestra la imagen a tamaño completo.
                         La imagen a tamaño completo está oculta por defecto (display: none;), y al hacer clic en una miniatura se cambia su estilo para que se muestre (display: block;). Esto se logra cambiando la propiedad style.display del elemento en JavaScript.</p>  
-                    <img src="./img/html.jpg" class="thumbnail" onclick="showImage('html.jpg')" alt="Thumbnail 1">
-                    <img src="./img/csss.png" class="thumbnail" onclick="showImage('fullImage2.jpg')" alt="Thumbnail 2">
-                    <img src="./img/js.png" class="thumbnail" onclick="showImage('fullImage2.jpg')" alt="Thumbnail 2">
-                    
+
+                  
             </div>
         </section>
+            <div class="carrusel">
+                    <div class="carrusel-contenedor">    
+                        <img src="./img/html.jpg"   class="carrusel-contendor-img">
+                        <img src="./img/csss.png"  class="carrusel-contendor-img">
+                        <img src="./img/js.png"  class="carrusel-contendor-img">
+                    </div>   
+            </div>       
+                    
 
         <section class="knowledge aumentar">
             <div class="knowledge__container container">
@@ -114,8 +134,11 @@
                         <button type="submit" class="addTaskButton">+</button>
                         <button type="button" class="orderButton roundBorder" onclick="renderOrderedTasks()">Ordenar</button>
                     </form>
-                    <div id="tasksContainer"></div>
-                </div>
+                    <div id="tasksContainer"></div> 
+                
+                    <p><a href="https://youtu.be/URk526D9mls">Enlace de yt</a></p>
+                  
+                </div>  <img class="knowledge__img__float" src="./img/lista.png">
             </div>
         </section>
 

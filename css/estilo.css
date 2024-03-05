@@ -2,9 +2,10 @@
 
 * {
   box-sizing: border-box;
-  
+
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   display: none;
 
 }
@@ -13,7 +14,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #333;
   font-size: 20px;
-  
+
 }
 
 .container {
@@ -94,7 +95,7 @@ body {
   height: 100%;
   display: flex;
   align-items: center;
-  top:0;
+  top: 0;
   position: sticky;
 }
 
@@ -125,27 +126,27 @@ body {
   width: 30px;
 }
 
-.nav_indice{
+.nav_indice {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.nav_indice__a{
+.nav_indice__a {
   background-color: #333;
   border-radius: 20px;
   color: #fff;
   margin: 5px;
   padding: 15px;
-  text-decoration:none ;
+  text-decoration: none;
 }
 
-.nav_indice__a:hover{
-  color:gray
+.nav_indice__a:hover {
+  color: gray
 }
 
-.fixxed__header{
+.fixxed__header {
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -153,7 +154,7 @@ body {
 
 }
 
-.id{
+.id {
   top: 20px;
 }
 
@@ -269,10 +270,10 @@ body {
 
 
 /*Index*/
-.titulos >h2 {
+.titulos>h2 {
   color: #000;
   text-shadow:
-  10px 6px 0px #f6ff00;
+    10px 6px 0px #f6ff00;
   font-family: 'Lobster', cursive;
 }
 
@@ -291,7 +292,7 @@ body {
   flex-wrap: wrap;
   padding: 20px;
   border-radius: 1px;
- 
+
 }
 
 
@@ -300,7 +301,7 @@ body {
   margin-bottom: 5px;
   margin: 40px;
   text-align: justify;
-  
+
 }
 
 .knowledge__paragraph__p {
@@ -309,13 +310,13 @@ body {
   margin: 40px;
   text-align: justify;
   color: #fff;
-  background-color:#555;
+  background-color: #555;
   padding: 20px;
 }
 
 
-.container__img{
- margin: 0 auto;
+.container__img {
+  margin: 0 auto;
 }
 
 .knowledge__img {
@@ -329,56 +330,33 @@ body {
   cursor: pointer;
 }
 
-.caja {
-  text-align: center;
-  margin-top: 30px
-}
+.knowledge__img__float {
 
-.caja__img {
-
-padding-top: 20px;
-  display: block;
-  margin: 0 auto;
-}
-
-
-/* Tecno */
-.tecno__img{
-  width: auto;
-  height: 100px;
-  object-fit: contain;
-
-}
-
-
-
-/* Ejercicio 1*/
-.dark-theme {
-  background-color: #fff; /* Fondo oscuro */
-}
-
-/*Ejercicio 3*/
-.thumbnail {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  cursor: pointer;
-}
-.full-image {
-  display: none;
-  max-width: 100%;
+  width: 70%;
   height: auto;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+
 }
 
 /* Footer */
-.footer{
+.footer {
   background-color: #000;
   width: auto;
-  
+
 
 }
 
 
+
+/* Ejercicio 1/ Cambio de color*/
+.dark-theme {
+  background-color: #fff;
+}
+
+/*Ejercicio 4 /Carrusel  de Imgs*/
 
 
 
