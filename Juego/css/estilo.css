@@ -5,9 +5,8 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0;
-    margin: 0;
-    height: 100vh;
+ 
+ 
 }
 
 img {
@@ -21,3 +20,61 @@ img {
 p {
     display: block;
 }
+
+
+.nav {
+    --padding-container: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: 0;
+    position: sticky;
+  }
+  
+  .nav__title {
+    font-weight: 300;
+  }
+  
+  .nav__link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+  }
+  
+  .nav__items {
+    list-style: none;
+  }
+  
+  .nav__links {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav__img {
+    display: block;
+    width: 30px;
+  }
+  
+  .nav_indice {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav_indice__a {
+    background-color: #333;
+    border-radius: 20px;
+    color: #fff;
+    margin: 5px;
+    padding: 15px;
+    text-decoration: none;
+  }
+  
+  .nav_indice__a:hover {
+    color: gray
+  }
+  
