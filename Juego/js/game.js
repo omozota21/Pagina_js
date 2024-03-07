@@ -5,8 +5,8 @@
 // } from './helper';
 
 
-// treasure coordinates
-const WIDTH = 400;
+// Definimos las constantes
+const WIDTH = 400;   
 const HEIGH = 400;
 
 let target = {
@@ -14,7 +14,7 @@ let target = {
   y: getRandomNumber(HEIGH)
 };
 
-// click handler
+//  Contador de clicks
 let $map = document.querySelector('#map');
 let $distance = document.querySelector('#distance');
 let clicks = 0;
@@ -22,12 +22,12 @@ let clicks = 0;
 $map.addEventListener('click', function (e) {
   console.log('click');
   clicks++;
-  let distance = getDistance(e, target);
+  let distance = getDistance(e, target);             //calcula la distancia entre el punto (e) y (target) 
   let distanceHint = getDistanceHint(distance);
   $distance.innerHTML = `<h1>${distanceHint}</h1>`;
 
   if (distance < 20 ) {
-    alert(`Found the treasure in ${clicks} clicks!`);
+    alert(`Enorabuena!! Lo has encontrado en ${clicks} clicks!`);
     location.reload();
   }
 });

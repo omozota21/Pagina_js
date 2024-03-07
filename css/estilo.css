@@ -17,6 +17,13 @@ body {
 
 }
 
+h2 {
+  font-size: 25px;
+
+
+}
+
+
 .container {
   width: 90%;
   max-width: 1200px;
@@ -357,8 +364,27 @@ body {
 }
 
 /*Ejercicio 4 /Carrusel  de Imgs*/
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 300px;
+}
 
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
 
+/* Añade animación para suavizar la transición entre imágenes */
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.mySlides {
+  animation: fade 2s cubic-bezier(.4, 0, .2, 1) infinite;
+}
 
 
 /* Lista de Tareas */
@@ -425,5 +451,3 @@ input:focus {
   text-decoration: line-through;
   color: var(--dark);
 }
-
-
