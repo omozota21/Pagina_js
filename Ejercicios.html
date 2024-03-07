@@ -77,9 +77,7 @@
                 <img src="./img/clicks.png" class="knowledge__img" onclick="incrementCounter()">
                 <p id="counter">0</p>
                 <h2 class="subtitle">Contador de clicks</h2>
-                <p class="knowledge__paragraph">Este ejercicio muestra cómo utilizar JavaScript para realizar un
-                    seguimiento del número
-                    de clics en un botón y actualizar dinámicamente el contenido de la página con ese valor.
+                <p class="knowledge__paragraph">
                     Se inicializa una variable llamada clicks en 0 fuera de cualquier función para que sea accesible
                     globalmente.
                     Cuando se hace clic en el botón, se activa la función incrementCounter(), que incrementa el valor de
@@ -96,16 +94,14 @@
             <div class="knowledge__container container">
                 <img src="./img/Desplazamiet2.png" class="knowledge__img">
                 <h2 class="subtitle">Desplazamiento de el H1</h2>
-                <p class="knowledge__paragraph">Este ejercicio muestra cómo utilizar JavaScript para realizar un
-                    seguimiento del número
-                    de clics en un botón y actualizar dinámicamente el contenido de la página con ese valor.
-                    Se inicializa una variable llamada clicks en 0 fuera de cualquier función para que sea accesible
-                    globalmente.
-                    Cuando se hace clic en el botón, se activa la función incrementCounter(), que incrementa el valor de
-                    clicks en uno.
-                    Luego, la función actualiza el contenido de un elemento HTML con el id counter utilizando
-                    document.getElementById('counter').textContent = clicks;,
-                    mostrando así el número actual de clics en la página.</p> <img src="./img/Desplazamiento.png"
+                <p class="knowledge__paragraph">
+                    Este código espera a que el documento HTML se cargue por completo. Después 
+                    de 200 milisegundos, busca el primer elemento en el documento que tiene la 
+                    clase CSS "aparecer". Luego, agrega la clase CSS "visible" a ese elemento. 
+                    Probablemente, esta clase "visible" haga que el elemento sea visible en la 
+                    página. En resumen, este código hace que un elemento aparezca en la página con 
+                    un pequeño retraso después de que la página se haya cargado completamente.
+                    </p> <img src="./img/Desplazamiento.png"
                     class="knowledge__img__float">
 
             </div>
@@ -114,17 +110,12 @@
      
         <section class="knowledge aumentar">
             <div class="knowledge__container container aumentar">
-                <img src="./img/clicks.png" class="knowledge__img" onclick="incrementCounter()">
+                <img src="./img/galeria_logo.png" class="knowledge__img" >
                 <h2 class="subtitle">Galeria de Imagenes</h2>
-                <p class="knowledge__paragraph">Este ejercicio crea una galería de miniaturas de imágenes con la
-                    capacidad de mostrar una imagen a tamaño completo al hacer clic en una miniatura.
-                    Cada miniatura tiene un atributo onclick que llama a la función showImage() con la URL de la imagen
-                    a tamaño completo como argumento.
-                    La función showImage() toma la URL de la imagen a tamaño completo como parámetro y actualiza la src
-                    de un elemento <img> con el id fullImage con esa URL, lo que muestra la imagen a tamaño completo.
-                    La imagen a tamaño completo está oculta por defecto (display: none;), y al hacer clic en una
-                    miniatura se cambia su estilo para que se muestre (display: block;). Esto se logra cambiando la
-                    propiedad style.display del elemento en JavaScript.</p>
+                <p class="knowledge__paragraph">
+                    Este código crea un efecto de presentación de diapositivas en una página web. Muestra una imagen a la vez, cambiando automáticamente cada 2 segundos.</p>
+                    <img src="./img/Galeria.png"
+                class="knowledge__img__float">
                 <div class="mySlides">
                     <img src="./img/html.jpg" style="width:100%">
                 </div>
@@ -142,7 +133,7 @@
                 <div class="mySlides">
                     <img src="./img/flutter.jpg" style="width:100%">
                 </div>
-           
+                
             </div>
 
         </section>
@@ -150,6 +141,7 @@
 
         <section class="knowledge aumentar">
             <div class="knowledge__container container">
+                <img src="./img/lista_tareas.png" class="knowledge__img" >
                 <h2 class="subtitle">Lista de tareas</h2>
                 <div class="list roundBorder">
                     <div class="date">
@@ -176,16 +168,6 @@
                 </div> <img class="knowledge__img__float" src="./img/lista.png">
             </div>
         </section>
-
-
-        <section>
-
-
-
-
-        </section>
-
-
 
     </main>
 

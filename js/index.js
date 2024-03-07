@@ -1,7 +1,13 @@
+
+/*Desplazamiento de H1 */
 document.addEventListener("DOMContentLoaded", function() {
+    // Después de 200 milisegundos, ejecuta la siguiente función
     setTimeout(function() {
-      document.querySelector('.aparecer').classList.add('visible');
-    }, 200) ;
+        // Selecciona el primer elemento en el documento con la clase aparecer
+        var element = document.querySelector('.aparecer');
+        // Añade la clase visible al elemento seleccionado
+        element.classList.add('visible');
+    }, 200);
 });
 
 
@@ -63,8 +69,6 @@ function showSlides() {
 
   slides[slideIndex-1].style.display = "block";  
   setTimeout(showSlides, 2000); // Cambia la imagen cada 2 segundos
-
-
 }
 
 /* Lista de Tareas */
