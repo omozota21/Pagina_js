@@ -2,18 +2,11 @@
 
 * {
   box-sizing: border-box;
-
+  width: 100%;
 }
 
 ::-webkit-scrollbar {
   display: none;
-
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #333;
-  font-size: 20px;
 
 }
 
@@ -44,12 +37,8 @@ h2 {
   transform: scale(1.01);
 }
 
-
-
-
 .hero {
   width: 100%;
-  height: 100vh;
   min-height: 600px;
   max-height: 800px;
   position: relative;
@@ -65,33 +54,9 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/editores-codigo-javascript.jpg');
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('./img/editores-codigo-javascript.jpg');
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
-  z-index: -1;
-}
-
-.hero2 {
-  width: 100%;
-  height: 100vh;
-  min-height: 600px;
-  max-height: 800px;
-  position: relative;
-  display: grid;
-  grid-template-rows: 100px 1fr;
-  color: #fff;
-}
-
-.hero2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/editores-codigo-javascript.jpg');
-  background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+ 
   z-index: -1;
 }
 
@@ -354,102 +319,4 @@ h2 {
   width: auto;
 
 
-}
-
-
-
-/* Ejercicio 1/ Cambio de color*/
-.dark-theme {
-  background-color: #fff;
-}
-
-/*Ejercicio 4 /Carrusel  de Imgs*/
-.mySlides {
-  display: none;
-  width: 100%;
-  height: 300px;
-  padding-top: 20px;
-}
-
-.mySlides img {
-  width: 100%;
-  height: 100%;
-  object-fit:contain;
-  
-}
-
-/* Añade animación para suavizar la transición entre imágenes */
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-.mySlides {
-  animation: fade 2s cubic-bezier(.4, 0, .2, 1) infinite;
-}
-
-
-/* Lista de Tareas */
-.roundBorder {
-  border-radius: 5px;
-}
-
-.list {
-  margin: 25px auto;
-  padding: 25px;
-  background-color: var(--light);
-  width: 100%;
-  max-width: 350px;
-}
-
-
-form {
-  margin: 20px 0;
-  display: grid;
-  grid-auto-flow: column;
-  grid-template-columns: auto 35px auto;
-  grid-column-gap: 15px;
-}
-
-input {
-  border: none;
-  padding-left: 10px;
-  background-color: var(--diabled);
-}
-
-input:focus {
-  outline: none;
-}
-
-.addTaskButton,
-.orderButton {
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.addTaskButton {
-  height: 35px;
-  border-radius: 50%;
-  font-size: 18px;
-  background-color: var(--diabled);
-}
-
-.orderButton {
-  background-color: var(--secondary);
-  color: var(--light);
-}
-
-.task {
-  background-color: var(--primary);
-  padding: 15px;
-  margin-top: 15px;
-  color: var(--light);
-  cursor: pointer;
-}
-
-.done {
-  background-color: var(--diabled);
-  text-decoration: line-through;
-  color: var(--dark);
 }

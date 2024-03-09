@@ -10,7 +10,7 @@ import React from 'react';
 function App() {
   return (
 <>
-    <header className="hero">
+    <header className="hero" id="0">
       <nav className="nav container">
         <div className="nav__logo">
           <h2 className="nav__title">Aprendiendo js</h2>
@@ -78,7 +78,7 @@ function App() {
 
     <section class="knowledge " id="2" >
         <div class="knowledge__container container">   
-                <img src="./img/codigo_js.png" class="knowledge__img"/>
+                <img src="./img&/" class="knowledge__img"/>
                 <h2 class="subtitle">Usos</h2>
         </div> 
         <div class="container  aumentar">   
