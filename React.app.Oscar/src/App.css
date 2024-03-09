@@ -42,7 +42,7 @@ h2 {
   min-height: 600px;
   max-height: 800px;
   position: relative;
-  display: grid;
+
   grid-template-rows: 100px 1fr;
   color: #fff;
 }
