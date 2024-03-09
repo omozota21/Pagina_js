@@ -23,6 +23,12 @@ h2 {
 
 }
 
+.subtitl{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
 
 .container {
   width: 90%;
@@ -352,9 +358,15 @@ h2 {
 .footer {
   background-color: #000;
   width: auto;
+}
+#scrollButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 
 
 }
+
 
 
 
@@ -378,7 +390,7 @@ h2 {
   
 }
 
-/* Añade animación para suavizar la transición entre imágenes */
+
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
